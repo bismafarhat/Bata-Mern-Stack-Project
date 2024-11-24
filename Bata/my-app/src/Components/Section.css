@@ -1,0 +1,140 @@
+/* Section Component Styling */
+
+/* General styling */
+.section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Men, Women, Kids Shoes Section */
+.shoe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.shoe-item {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.shoe-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.shoe-item:hover {
+    transform: scale(1.05);
+}
+
+/* Slider Section */
+.slider-section {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Brand Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+/* Customer Reviews */
+.reviews-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-item {
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.rating {
+    color: #f4c150;
+    font-size: 18px;
+    margin-top: 5px;
+}
